@@ -1,0 +1,30 @@
+<div class="container"> 
+  <h2>Todo App</h2>
+  <small>{{ todayDate | date: 'yyyy-mm-dd'}}</small>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-2">
+        <label for="newTodo">New Todo:</label>
+      </div>
+      <div class="col-4">
+        <input [(ngModel)]="updateItem.name" class="form-control form-control-sm"/>
+      </div>
+      <div class="col" *ngIf="editInput">
+        <button type="button" class="btn btn-primary btn-sm" (click)="UpdateTodo()">Update</button> 
+      </div>
+      <div class="col" *ngIf="!editInput">
+        <button type="button" class="btn btn-primary btn-sm" (click)="AddTodo()">Add</button> 
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <ul>
+      <li *ngFor="let item of todoItem;let index = index" >
+        <span>{{ item.name }}</span>
+        <a class="small" (click)="EditTodo(index)"> Edit</a>
+        <span class="small"> | </span>
+        <a class="small" (click)="DeleteTodo(index)">Delete</a>
+      </li>      
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+{
+  "npmScope": "y",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "my-app": {
+      "tags": []
+    },
+    "my-app-e2e": {
+      "tags": []
+    },
+    "y-material": {
+      "tags": [
+        "y"
+      ]
+    },
+    "y-material-e2e": {
+      "tags": []
+    },
+    "apps-material": {
+      "tags": [
+        "y"
+      ]
+    },
+    "apps-material-e2e": {
+      "tags": []
+    },
+    "my-material-material": {
+      "tags": [
+        "y"
+      ]
+    },
+    "my-material-material-e2e": {
+      "tags": []
+    }
+  }
+}
