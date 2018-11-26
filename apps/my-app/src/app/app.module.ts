@@ -45,11 +45,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FormsModule,
     NxModule.forRoot(),
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatButtonModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

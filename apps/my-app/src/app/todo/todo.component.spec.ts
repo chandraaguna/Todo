@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { TodoComponent } from './todo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('TodoComponent', () => {
   let component: TodoComponent;
@@ -9,7 +10,7 @@ describe('TodoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FormsModule, RouterTestingModule],
+      imports: [FormsModule, RouterTestingModule, HttpClientModule],
       declarations: [TodoComponent]
     }).compileComponents();
   }));
